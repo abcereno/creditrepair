@@ -1,0 +1,51 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: black;
+    color: antiquewhite;
+}
+.row{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.ratings {
+    display: flex;
+    justify-content: space-between;
+}
+.ratings:nth-child(2){
+    transition-delay: 200ms;
+}
+.ratings:nth-child(3){
+    transition-delay: 400ms;
+}
+.ratings:nth-child(4){
+    transition-delay: 600ms;
+}
+.ratings:nth-child(5){
+    transition-delay: 800ms;
+}
+.ratings:nth-child(6){
+    transition-delay: 1s;
+}
+li{
+    font-size: larger;
+}
+@media (prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
