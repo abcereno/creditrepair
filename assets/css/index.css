@@ -1,15 +1,24 @@
 html{
     scroll-behavior: smooth;
 }
-body{
-    background-color: black;
-    color: antiquewhite;
+.carousel-item, .carousel-inner{
+    box-sizing: border-box;
+    height: 50vh;
+    overflow: hidden;
+}
+.carousel-item img {
+    object-fit: contain; /* This property ensures that the image covers the entire container without stretching */
+    max-height: 100%; /* Set a maximum height for the images */
+    width: 100%; /* Make sure the image takes up 100% of the width */
+}
+h2{
+    margin-bottom:  20px;
 }
 .row{
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 .hidden {
     opacity: 0;
