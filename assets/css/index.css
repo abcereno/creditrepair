@@ -1,6 +1,30 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-color: bisque;
+}
+#subImportant{
+    background-color: darkgreen;
+    border-radius: 25px;
+}
+#important{
+    background-color: darkred;
+    border-radius: 25px;
+}
+.nav-item{
+    cursor: pointer;
+}
+.row{
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 32px;
+    box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
+-webkit-box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
+-moz-box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
+margin: 100px 0;
+padding: 50px;
+}
 .carousel-item, .carousel-inner{
     box-sizing: border-box;
     height: 50vh;
