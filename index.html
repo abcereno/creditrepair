@@ -18,30 +18,35 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+  <nav class="navbar navbar-dark bg-dark">
     <div class="container">
-      <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#">LT Student Credit Solutions</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarTogglerDemo02">
-          <ul class="navbar-nav mb-2 mb-lg-0">
+      <a class="navbar-brand" href="#">LT Student Credit Solutions</a>
+      <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark w-50 navbar-collapse" tabindex="-1" id="offcanvasDarkNavbar"
+        aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header d-flex justify-content-between col-12">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+            Links
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body w-100">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Us</a>
+              <a class="nav-link" aria-current="page">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Sign Up</a>
+              <a class="nav-link" aria-current="page">Sign Up</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contact Us</a>
+              <a class="nav-link" aria-current="page">Contact Us</a>
             </li>
-            <li id="important" class="nav-item">
-              <a class="nav-link">Repair Now</a>
-            </li>
-            <li id="subImportant" class="nav-item">
-              <a class="nav-link">Delete Inquiries</a>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page">Delete Inquiries</a>
             </li>
           </ul>
         </div>
@@ -410,7 +415,7 @@
                     href="mailto:cereno.abc@gmail.com?subject=We%20Want%20You!&body=Hi%20Anthony!%20Can%20I%20interest%20you%20in%20an%20opportunity%20for%20growth%20and%20learning%20from%20seniors?%20Hope%20to%20hear%20from%20you%20soon!">Gmail</a></noscript> -->
     </div>
   </div>
-  <footer class="d-flex justify-content-around p-5 bg-dark" style="color: white;">
+  <footer class="d-flex justify-content-around flex-wrap p-5 bg-dark" style="color: white;">
     <h6>Copyright © 2024. All Rights Reserved</h6>
     <h6>Made by <a href="https://abcereno.github.io/portfolio/">Anthony Bernard Cereno</a></h6>
   </footer>

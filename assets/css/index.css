@@ -4,14 +4,6 @@ html{
 body{
     background-color: bisque;
 }
-#subImportant{
-    background-color: darkgreen;
-    border-radius: 25px;
-}
-#important{
-    background-color: darkred;
-    border-radius: 25px;
-}
 .nav-item{
     cursor: pointer;
 }
@@ -27,7 +19,7 @@ padding: 50px;
 }
 .carousel-item, .carousel-inner{
     box-sizing: border-box;
-    height: 50vh;
+    height: clamp(300px, 50vh, 600px);
     overflow: hidden;
 }
 .carousel-item img {
@@ -86,3 +78,9 @@ li{
         transition: none;
     }
 }
+@media (max-width: 768px) {
+    .carousel-item,
+    .carousel-inner {
+      height: 25vh; /* Adjust the height for smaller screens */
+    }
+  }
