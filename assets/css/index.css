@@ -1,41 +1,96 @@
-html{
+html {
     scroll-behavior: smooth;
 }
-body{
-    background-color: bisque;
+nav,
+footer {
+    background-color: #0A2265;
 }
-.nav-item{
+a,
+li,
+footer {
+    color: #DEE572 !important;
+}
+
+li:hover {
+    opacity: .5;
+}
+.nav-item, li, a {
     cursor: pointer;
 }
-.row{
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 32px;
-    box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
--webkit-box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
--moz-box-shadow: 12px 12px 26px 2px rgba(0,0,0,0.43);
-margin: 100px 0;
-padding: 50px;
+.hero {
+    padding: 50px;
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/score.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    overflow: hidden;
+    position: relative;
 }
-.carousel-item, .carousel-inner{
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    /* Adjust the alpha value for darkness */
+}
+
+.hero>* {
+    color: #f1f1f1;
+    /* Set text color to white */
+    z-index: 1;
+    backdrop-filter: blur(4px);
+    /* Ensure the text is above the overlay */
+}
+
+.content {
+    /* border: 1px solid black; */
+    /* border-radius: 32px; */
+    box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    margin: 50px 0;
+    padding: 25px;
+}
+.card{
+    box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+}
+.carousel-item,
+.carousel-inner {
     box-sizing: border-box;
     height: clamp(300px, 50vh, 600px);
     overflow: hidden;
 }
+
 .carousel-item img {
-    object-fit: contain; /* This property ensures that the image covers the entire container without stretching */
-    max-height: 100%; /* Set a maximum height for the images */
-    width: 100%; /* Make sure the image takes up 100% of the width */
+    object-fit: contain;
+    /* This property ensures that the image covers the entire container without stretching */
+    max-height: 100%;
+    /* Set a maximum height for the images */
+    width: 100%;
+    /* Make sure the image takes up 100% of the width */
 }
-h2{
-    margin-bottom:  20px;
+
+h2 {
+    margin-bottom: 20px;
 }
-.row{
+
+/* .row {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 50vh;
-}
+} */
+
 .hidden {
     opacity: 0;
     filter: blur(5px);
@@ -44,43 +99,75 @@ h2{
     display: flex;
     justify-content: center;
 }
+
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
 }
+
 .ratings {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
-.ratings:nth-child(2){
+
+.ratings:nth-child(2) {
     transition-delay: 200ms;
 }
-.ratings:nth-child(3){
+
+.ratings:nth-child(3) {
     transition-delay: 400ms;
 }
-.ratings:nth-child(4){
+
+.ratings:nth-child(4) {
     transition-delay: 600ms;
 }
-.ratings:nth-child(5){
+
+.ratings:nth-child(5) {
     transition-delay: 800ms;
 }
-.ratings:nth-child(6){
+
+.ratings:nth-child(6) {
     transition-delay: 1s;
 }
-li{
+
+li {
     font-size: larger;
 }
+footer{
+    min-height: 50vh;
+}
+
+/* scrolling animation */
+.reviews{
+    overflow: hidden;
+}
+.scroll{
+      overflow: hidden;
+      animation: scrollLeft 10s linear infinite;
+}
+@keyframes scrollLeft {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
 @media (prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
 }
+
 @media (max-width: 768px) {
+
     .carousel-item,
     .carousel-inner {
-      height: 25vh; /* Adjust the height for smaller screens */
+        height: 25vh;
+        /* Adjust the height for smaller screens */
     }
-  }
+}
