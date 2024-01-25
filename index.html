@@ -275,6 +275,15 @@
         </div>
       </div>
     </div>
+    <!-- canva video -->
+    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe autoplay muted loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFLj38bkLA&#x2F;watch?embed&autoplay=1&muted=1" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+    <!-- end of canva video -->
     <div class="row content courses hidden">
       <h2>"Here's Resources"</h2>
       <hr>
@@ -485,15 +494,28 @@
       <!-- <noscript><a
                     href="mailto:cereno.abc@gmail.com?subject=We%20Want%20You!&body=Hi%20Anthony!%20Can%20I%20interest%20you%20in%20an%20opportunity%20for%20growth%20and%20learning%20from%20seniors?%20Hope%20to%20hear%20from%20you%20soon!">Gmail</a></noscript> -->
     </div>
+    <!-- canva -->
+<div style="position: relative; width: 100%; height: 0; padding-top: 83.8298%;
+padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+border-radius: 8px; will-change: transform;">
+    <iframe
+        style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        src="https://www.canva.com/design/DAFvMyUwujQ/view?embed&autoplay=1&muted=1"
+        allowfullscreen="allowfullscreen" allow="fullscreen" id="canvaIframe">
+    </iframe>
+</div>
+<a href="https://www.canva.com/design/DAFvMyUwujQ/view?utm_content=DAFvMyUwujQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+    target="_blank" rel="noopener">iNQUIRY DELETION SERVICE</a> by LaToyia Turner
+<!-- end canva -->
   </div>
-  
+
   <!-- Messenger Chat Plugin Code -->
   <div id="fb-root"></div>
 
   <!-- Your Chat Plugin code -->
   <div id="fb-customer-chat" class="fb-customerchat">
   </div>
-  
+
   <!-- modal -->
   <div class="modal fade text-dark" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -541,10 +563,10 @@
         <div>
           <div class=" bg-transparent">
             <div class="input-group pt-3 mx-auto">
-              <input type="text" class="form-control" placeholder="email"
-                aria-label="email" aria-describedby="button-addon2"><button class="btn btn-outline-warning w-50"
-                type="button" id="button-addon2">Button</button>
-              </div>
+              <input type="text" class="form-control" placeholder="email" aria-label="email"
+                aria-describedby="button-addon2"><button class="btn btn-outline-warning w-50" type="button"
+                id="button-addon2">Button</button>
+            </div>
           </div>
         </div>
       </div>
@@ -569,7 +591,7 @@
       <div class="row d-flex justify-content-center mt-5">
         <h4 class="text-center">Follow Us:</h4>
         <ul class="socials list-unstyled d-flex justify-content-around mt-3">
-          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><a href="https://www.facebook.com/studentcredit101"><i class="fa-brands fa-facebook"></i></a></li>
           <li><i class="fa-brands fa-twitter"></i></li>
           <li><i class="fa-brands fa-instagram"></i></li>
           <li><i class="fa-brands fa-tiktok"></i></li>
@@ -578,8 +600,7 @@
     </div>
     <hr>
     <div class="d-flex justify-content-around flex-wrap p-3">
-      <h6>Copyright © 2024. All Rights Reserved</h6>
-      <h6>Made by <a href="https://abcereno.github.io/portfolio/">Anthony Bernard Cereno</a></h6>
+      <h6>Copyright © 2024. All Rights Reserved. Lt Student Credit Solutions</h6>
     </div>
   </footer>
 
@@ -605,6 +626,16 @@
       js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <script>
+      // Wait for the iframe to load
+      window.onload = function () {
+          // Access the iframe element
+          var iframe = document.getElementById('canvaIframe');
+  
+          // Autoplay the video inside the iframe
+          iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+      };
   </script>
 </body>
 
