@@ -532,26 +532,28 @@
         </div>
         <div>
           <div class=" bg-transparent">
-            <div class="input-group pt-3 w-75 mx-auto"><input type="text" class="form-control" placeholder="email"
+            <div class="input-group pt-3 mx-auto">
+              <input type="text" class="form-control" placeholder="email"
                 aria-label="email" aria-describedby="button-addon2"><button class="btn btn-outline-warning w-50"
-                type="button" id="button-addon2">Button</button></div>
+                type="button" id="button-addon2">Button</button>
+              </div>
           </div>
         </div>
       </div>
       <div class="row mt-5">
-        <div class="col">
+        <div class="col-12 col-md-3 d-flex justify-content-center gap-3">
           <p>(062)992-1245-46</p>
           <p>24/7 | Mon-Sun</p>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-3 d-flex justify-content-center gap-3">
           <p>1329 Marikina, Metro Manila</p>
           <p>Phillipines 7000</p>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-3 d-flex justify-content-center gap-3">
           <p>info@studentcredit.com</p>
           <p>support@studentcredit.com</p>
         </div>
-        <div class="col">
+        <div class="col-12 col-md-3 d-flex justify-content-center gap-3">
           <p>Mon-Sat: 08:00 - 20:00</p>
           <p>Sun: 09:00 - 16:00</p>
         </div>
@@ -587,14 +589,14 @@
 
   <!-- Your SDK code -->
   <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
       FB.init({
-        xfbml            : true,
-        version          : 'v19.0'
+        xfbml: true,
+        version: 'v19.0'
       });
     };
 
-    (function(d, s, id) {
+    (function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;

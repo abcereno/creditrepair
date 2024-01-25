@@ -146,7 +146,7 @@ footer{
 }
 .scroll{
       overflow: hidden;
-      animation: scrollLeft 10s linear infinite;
+      animation: scrollLeft 20s linear infinite;
 }
 @keyframes scrollLeft {
     0% {
