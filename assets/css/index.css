@@ -112,7 +112,6 @@ h2 {
     align-items: center;
     flex-wrap: wrap;
 }
-
 .ratings:nth-child(2) {
     transition-delay: 200ms;
 }
@@ -132,7 +131,6 @@ h2 {
 .ratings:nth-child(6) {
     transition-delay: 1s;
 }
-
 li {
     font-size: larger;
 }
@@ -146,7 +144,16 @@ footer{
 }
 .scroll{
       overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      /* flex-wrap: nowrap; */
       animation: scrollLeft 20s linear infinite;
+}
+.scroll > .card{
+    box-sizing: content-box !important;
+    width: 250px !important;
+    height: clamp( 200px, 250px , 250px) !important;
+    margin: 0px 15px;
 }
 @keyframes scrollLeft {
     0% {
