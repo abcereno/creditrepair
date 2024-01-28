@@ -23,11 +23,11 @@ li:hover {
 }
 .hero {
     padding: 50px;
-    height: 65vh;
+    height: 75vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    background-image: url(../images/score.jpg);
+    background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -46,7 +46,7 @@ li:hover {
     /* Adjust the alpha value for darkness */
 }
 
-.hero>* {
+.hero>.child>.details {
     color: #f1f1f1;
     z-index: 1;
     backdrop-filter: blur(4px);
