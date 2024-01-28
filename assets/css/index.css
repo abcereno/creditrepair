@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
 }
+body{
+    background-color: #123A48; 
+    color: #DEE572;
+}
 nav,
 footer {
     background-color: #0A2265;
@@ -44,15 +48,12 @@ li:hover {
 
 .hero>* {
     color: #f1f1f1;
-    /* Set text color to white */
     z-index: 1;
     backdrop-filter: blur(4px);
-    /* Ensure the text is above the overlay */
 }
 
 .content {
-    /* border: 1px solid black; */
-    /* border-radius: 32px; */
+
     box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
     -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
     -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
@@ -60,37 +61,15 @@ li:hover {
     padding: 25px;
 }
 .card{
+    color: black;
     box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
     -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
     -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-}
-.carousel-item,
-.carousel-inner {
-    box-sizing: border-box;
-    height: clamp(300px, 50vh, 600px);
-    overflow: hidden;
-}
-
-.carousel-item img {
-    object-fit: contain;
-    /* This property ensures that the image covers the entire container without stretching */
-    max-height: 100%;
-    /* Set a maximum height for the images */
-    width: 100%;
-    /* Make sure the image takes up 100% of the width */
 }
 
 h2 {
     margin-bottom: 20px;
 }
-
-/* .row {
-    display: grid;
-    place-items: center;
-    align-content: center;
-    min-height: 50vh;
-} */
-
 .hidden {
     opacity: 0;
     filter: blur(5px);
