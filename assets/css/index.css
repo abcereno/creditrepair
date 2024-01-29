@@ -42,14 +42,14 @@ li:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.4);
     /* Adjust the alpha value for darkness */
 }
 
 .hero> *{
     color: #f1f1f1;
     z-index: 1;
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(4px);
 }
 
 .content {
