@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
 body{
-    background-color: #123A48; 
-    color: #DEE572;
+    color: black;
+    font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 nav,
 footer {
@@ -42,31 +47,37 @@ li:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.3);
     /* Adjust the alpha value for darkness */
 }
-
+.full-bleed{
+    box-shadow: 0 0 0 100vmax #123A48;
+    clip-path: inset(0 -100vmax);
+    color: #DEE572;
+}
 .hero> *{
-    color: #f1f1f1;
+    color: #f1f1f1;;
     z-index: 1;
     backdrop-filter: blur(4px);
 }
 
+.inverse{
+    background-color: #123A48;
+}
 .content {
-
-    box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-    -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-    -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-    margin: 50px 0;
+    /* box-shadow: 9px 7px 11px -6px  rgba(115, 181, 93, 0.43);
+    -webkit-box-shadow: 9px 7px 11px -6px  rgba(115, 181, 93, 0.43);
+    -moz-box-shadow: 9px 7px 11px -6px  rgba(115, 181, 93, 0.43); */
     padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
-.card{
+.card, iframe{
     color: black;
-    box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-    -webkit-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
-    -moz-box-shadow: 12px 12px 26px 2px rgba(115, 181, 93, 0.43);
+    box-shadow: 11px 11px 9px -7px rgba(0,0,0,0.91);
+-webkit-box-shadow: 11px 11px 9px -7px rgba(0,0,0,0.91);
+-moz-box-shadow: 11px 11px 9px -7px rgba(0,0,0,0.91);
 }
-
 h2 {
     margin-bottom: 20px;
 }
@@ -75,8 +86,6 @@ h2 {
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
-    display: flex;
-    justify-content: center;
 }
 
 .show {
@@ -140,6 +149,14 @@ footer{
     }
     100% {
       transform: translateX(-100%);
+    }
+  }
+@keyframes scrollUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
     }
   }
 
